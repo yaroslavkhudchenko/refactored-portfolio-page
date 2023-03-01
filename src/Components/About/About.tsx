@@ -3,7 +3,7 @@ import profilePhoto from './../../assets/photo.jpg'
 import styles from './About.module.scss'
 
 const About: React.FunctionComponent = () => (
-  <section className={styles.aboutSection}>
+  <section className={styles.aboutSection} id='about'>
     <div className={styles.aboutBlock}>
       <div className={styles.aboutBlockTop}>
         <div className={styles.photo}>
