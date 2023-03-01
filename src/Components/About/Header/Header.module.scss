@@ -20,15 +20,15 @@
         -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        &:before {
-            bottom:0;
-        }
-        &:after {
-            top:0;
-        }
+    }
+    &:before {
+        bottom:0;
+    }
+    &:after {
+        top:0;
     }
 }
-  .change {
+  .openedBurger {
     &:before {
           bottom: 50%;
           -webkit-transform: rotate(-45deg) translate3d(0, 50%, 0);
@@ -53,8 +53,7 @@
     align-items: center;
     justify-content: center;
     z-index:1;
-    left:-10%;
-    opacity: 0;
+    // left:-10%;
       a {
           width: 100%;
           text-align: center;
@@ -85,7 +84,6 @@
       animation-name: hide;
       animation-duration: 1s;
       animation-fill-mode: forwards;        
-      z-index: 2;
   }
   @keyframes move {
       from {left: -10%;}

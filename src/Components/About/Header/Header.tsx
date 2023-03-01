@@ -1,39 +1,35 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import styles from './Header.module.scss'
 
 const Header: React.FunctionComponent = () => {
-  const burgerRef = useRef<HTMLDivElement>(null)
   const [showMenu, setShowMenu] = useState<boolean>(false)
+  const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(false)
 
   const toggleBurgerMenu = () => {
-    burgerRef?.current?.classList.toggle('change')
+    setIsBurgerOpen((prevState) => !prevState)
     setShowMenu((prevState) => !prevState)
   }
 
   return (
     <header className={styles.header} id='header'>
-      <div className={styles.burger} ref={burgerRef} onClick={toggleBurgerMenu}>
-        <span className={styles.bar1} />
-        <span className={styles.bar2} />
-        <span className={styles.bar3} />
-      </div>
-
-      {/* {showMenu && ( */}
+      <span
+        className={`${styles.burger} ${isBurgerOpen ? styles.openedBurger : ''}`}
+        onClick={toggleBurgerMenu}
+      />
       <nav className={`${styles.menu} ${showMenu ? styles.showMenu : styles.hideMenu}`}>
-        <a href='#homePage'>
-          <span className={styles.menuItem}>Home</span>
+        <a href='#homePage' className={styles.menuItem}>
+          Home
         </a>
-        <a href='#about'>
-          <span className={styles.menuItem}>About</span>
+        <a href='#about' className={styles.menuItem}>
+          About
         </a>
-        <a href='#portfolio'>
-          <span className={styles.menuItem}>Portfolio</span>
+        <a href='#portfolio' className={styles.menuItem}>
+          Portfolio
         </a>
-        <a href='#contact'>
-          <span className={styles.menuItem}>Contact</span>
+        <a href='#contact' className={styles.menuItem}>
+          Contact
         </a>
       </nav>
-      {/* )} */}
     </header>
   )
 }
