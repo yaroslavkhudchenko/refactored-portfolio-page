@@ -52,8 +52,10 @@
     font-size: 1.3em;//font-size: 60px;
     align-items: center;
     justify-content: center;
-    z-index:1;
-    // left:-10%;
+    z-index:2;
+     left:-10%;
+     opacity: 0;
+     transition: opacity 1s;
       a {
           width: 100%;
           text-align: center;
@@ -79,19 +81,21 @@
       animation-duration: 1s;
       animation-fill-mode: forwards;
       z-index: 2;
-  }
+    opacity: 1;
+    }
   .hideMenu {
       animation-name: hide;
       animation-duration: 1s;
       animation-fill-mode: forwards;        
+    opacity: 0;
   }
   @keyframes move {
-      from {left: -10%;}
-      to {left: 0;}
+      from {left: -10%; opacity: 0;}
+      to {left: 0; opacity: 1;}
   }
   @keyframes hide {
-      from {left: 0;}
-      to {left: -10%;}
+      from {left: 0; opacity: 1;}
+      to {left: -10%; opacity: 0;}
   }
 
 @media (max-width: 1440px) {
@@ -107,6 +111,12 @@
         from {left: 0;}
         to {left: -20%;}
     }
+    .showMenu {
+    opacity: 1;
+    }
+  .hideMenu {
+    opacity: 0;
+  }
 }
 
 
@@ -129,6 +139,12 @@
         from {left: 0;}
         to {left: -40%;}
     }
+    .showMenu {
+        opacity: 1;
+    }
+    .hideMenu {
+        opacity: 0;
+    }
 }
 
 
@@ -142,7 +158,6 @@
             font-size: 50px;
         }
     }
-    
     @keyframes move {
         from {left: -70%;}
         to {left: 0;}
@@ -151,4 +166,10 @@
         from {left: 0;}
         to {left: -70%;}
     }
+     .showMenu {
+    opacity: 1;
+    }
+  .hideMenu {
+    opacity: 0;
+  }
 }
