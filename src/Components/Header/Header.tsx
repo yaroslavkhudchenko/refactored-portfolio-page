@@ -17,7 +17,7 @@ const Header: React.FunctionComponent = () => {
         onClick={toggleBurgerMenu}
       />
       <nav className={`${styles.menu} ${showMenu ? styles.showMenu : styles.hideMenu}`}>
-        <a href='#homePage' className={styles.menuItem}>
+        <a href='#bioSection' className={styles.menuItem}>
           Home
         </a>
         <a href='#about' className={styles.menuItem}>
