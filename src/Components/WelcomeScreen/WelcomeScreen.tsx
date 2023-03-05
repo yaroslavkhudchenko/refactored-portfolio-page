@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react'
 import styles from './WelcomeScreen.module.scss'
 
-const WelcomeScreen = () => {
+const WelcomeScreen: FunctionComponent = () => {
   return (
     <section className={styles.welcomeScreen} id='welcomeScreen'>
       <div className={styles.title}>
