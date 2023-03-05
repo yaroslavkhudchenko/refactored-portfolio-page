@@ -39,8 +39,8 @@ const Contact: FunctionComponent = () => (
               And don&#39;t forget to get a copy of my&nbsp;
               <a
                 className={styles.downlCVButton}
-                href='YaroslavKhudchenkoCV.pdf'
-                download={'YaroslavKhudchenkoCV.pdf'}
+                href='YaroslavKhudchenko.pdf'
+                download={'YaroslavKhudchenko.pdf'}
                 id='downlCVButton'
               >
                 CV

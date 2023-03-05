@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 import { technologiesData } from './../../Data/data'
-import profilePhoto from './../../assets/photo.jpg'
+import profilePhoto from './../../assets/photo.png'
 import styles from './About.module.scss'
 
 const About: FunctionComponent = () => (
