@@ -1,8 +1,9 @@
+import { FunctionComponent } from 'react'
 import { technologiesData } from './../../Data/data'
 import profilePhoto from './../../assets/photo.jpg'
 import styles from './About.module.scss'
 
-const About: React.FunctionComponent = () => (
+const About: FunctionComponent = () => (
   <section className={styles.aboutSection} id='about'>
     <div className={styles.aboutBlock}>
       <div className={styles.aboutBlockTop}>

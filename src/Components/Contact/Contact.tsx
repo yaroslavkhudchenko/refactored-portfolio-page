@@ -1,8 +1,9 @@
+import { FunctionComponent } from 'react'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import styles from './Contact.module.scss'
 
-const Contact = () => (
+const Contact: FunctionComponent = () => (
   <section className={styles.contactSection} id='contactSection'>
     <div className={styles.formTitle}>{/* Contact */}</div>
     <div className={styles.contactContainer}>
