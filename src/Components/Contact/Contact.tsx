@@ -10,9 +10,9 @@ const Contact: FunctionComponent = () => (
       <div className={styles.socialMediaContainer}>
         <div className={styles.socialBody}>
           <div className={styles.socialHello}>Hey, wanna contact me?</div>
-          <div className={styles.socialMailNotification}>Feel free to send me an email</div>
+          <div className={styles.socialMailNotification}></div>
           <div className={styles.socialMail}>
-            <a href='mailto:yaroslav.khudchenko@gmail.com' />
+            Feel free to send me an <a href='mailto:yaroslav.khudchenko@gmail.com'>email</a>
           </div>
           <div className={styles.socialAppsPart}>
             <div className={styles.socialAppsHello}>

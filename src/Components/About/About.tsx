@@ -20,7 +20,7 @@ const About: FunctionComponent = () => (
       </div>
       <div className={styles.stackBlock}>
         <div className={styles.iKnow}>
-          <div className={styles.iKnowTitl}>Technologies I use:</div>
+          <div className={styles.iKnowTitle}>Technologies I use:</div>
           <div className={styles.iKnowContent}>
             {technologiesData.known.map((tech: string) => (
               <span key={tech}>{tech}</span>

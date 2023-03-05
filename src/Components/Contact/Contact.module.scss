@@ -60,7 +60,19 @@
 			color: white;
 			.socialHello {
 				font-size:50px;
-				margin-bottom: 30px;			}
+				margin-bottom: 30px;			
+			}
+			.socialMail {
+				a {
+						background: #3E131A;
+					padding: 5px 10px;
+					border-radius: 5px;
+					cursor: pointer;
+					box-shadow: 6px 5px 2px 3px black;
+					text-decoration: none;
+					color: white;
+					}
+			}
 			.socialAppsPart {
 				.socialAppsHello {
 					display: flex;
@@ -109,7 +121,8 @@
 				.socialAppsPart {
 					font-size:30px;
 					.socialAppsHello {
-						margin-top: 10px;
+						margin-top: 20px;
+						justify-content: center;
 					}
 					.cvGrab {
 						line-height: 45px;
@@ -123,6 +136,7 @@
 @media (max-width: 880px) {
 	.contactSection {
 		height: auto;
+		text-align: center;
 		.contactContainer {
 			flex-direction: column-reverse;
 			.formContainer {
@@ -146,6 +160,9 @@
 				}
 				.socialMail {
 					font-size: 22px;
+					a {
+						padding: 3px 5px;
+					}
 				}
 				.socialAppsPart {
 					font-size: 22px;
@@ -164,6 +181,7 @@
 					}
 					.cvGrab {
 						line-height: 40px;
+						text-align: center;
 					}
 				}
 			}
