@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 import styles from './Header.module.scss'
 
-const Header: React.FunctionComponent = () => {
+const Header: FunctionComponent = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false)
   const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(false)
 
@@ -26,7 +26,7 @@ const Header: React.FunctionComponent = () => {
         <a href='#portfolio' className={styles.menuItem}>
           Portfolio
         </a>
-        <a href='#contact' className={styles.menuItem}>
+        <a href='#contactSection' className={styles.menuItem}>
           Contact
         </a>
       </nav>
