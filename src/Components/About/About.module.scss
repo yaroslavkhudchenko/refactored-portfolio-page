@@ -118,7 +118,7 @@
     // display: none;
 }
 @media (max-width: 1440px) {
-   #about {
+   .aboutSection {
         .aboutBlock {
             .aboutBlockTop {
                 .photo {
@@ -131,7 +131,7 @@
     }
 }
 @media (max-width: 1024px) {
-    #about {
+    .aboutSection {
         .aboutBlock {
             .aboutBlockTop {
                 flex-direction: column;
@@ -169,7 +169,7 @@
 }
 
 @media (max-width: 768px) { 
-    #about {
+    .aboutSection {
         .aboutBlock {
             .aboutBlockTop {
                 .text {
