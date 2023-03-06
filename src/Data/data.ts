@@ -6,15 +6,17 @@ interface Tech {
 
 export const technologiesData: Tech = {
   known: [
+    'React.js',
     'Javascript',
     'Typescript',
-    'React.js',
+    'Redux',
+    'GraphQL',
+    'Sass',
     'Three.js',
-    'CSS',
     'GIT',
     'Webpack',
     'NPM',
     'REST API',
   ],
-  familiar: ['MongoDB', 'Node.js(basics)'],
+  familiar: ['Firebase', 'Node.js(basics)'],
 }
